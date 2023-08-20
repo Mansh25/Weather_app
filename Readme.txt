@@ -1,4 +1,6 @@
-﻿# Weather App
+View the project at-https://mansh25.github.io/Weather_app/
+
+# Weather App
 
 
 Welcome to the Weather App! This web application allows you to easily search for weather information in different regions and provides details such as temperature, humidity, wind speed, sunrise, and sunset times. The app is built using HTML, JavaScript, and CSS.

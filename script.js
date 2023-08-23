@@ -1,10 +1,3 @@
-const convertUnixToTime = (unixTimestamp) => {
-  const date = new Date(unixTimestamp * 1000);
-  const hours = date.getHours();
-  const minutes = "0" + date.getMinutes();
-  return hours + ":" + minutes.substr(-2);
-};
-
 const options = {
   method: 'GET',
   headers: {
@@ -29,8 +22,8 @@ const getWeather = (city)=>{
     wind_speed.innerHTML = response.wind_speed
     wind_speed2.innerHTML = response.wind_speed
     wind_degrees.innerHTML = response.wind_degrees
-    sunrise.innerHTML = convertUnixToTime(response.sunrise); // Convert and update sunrise time
-    sunset.innerHTML = convertUnixToTime(response.sunset);
+    sunrise.innerHTML = response.sunrise
+    sunset.innerHTML = response.sunset
   })
   .catch(err => console.error(err));
   }
